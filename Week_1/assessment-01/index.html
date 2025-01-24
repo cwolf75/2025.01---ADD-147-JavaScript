@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/script.js" defer></script>
+    <title>Assessment 1</title>
+    <script>
+        function changeParagraphTextInPage() {
+            const paragraph = document.getElementById('info');
+            paragraph.textContent = 'This text was updated using a function in the head section!';
+        }
+    </script>
+</head>
+<body>
+      
+    <h1>Sunset in the UP</h1>
+    
+    <div class="images">
+        <figure>
+            <img id="mainImage" src="images/sunset_1.jpg" alt="Sunset #1" style="width: 400px;">
+            <figcaption>Every sunset is striking!</figcaption>
+        </figure>
+    </div>
+
+    <div>
+        <button onclick="changeImage('images/sunset_1.jpg')">Sunset 1</button>
+        <button onclick="changeImage('images/sunset_2.jpg')">Sunset 2</button>
+        <button onclick="changeImage('images/sunset_3.jpg')">Sunset 3</button>
+    </div>
+
+    <p id="info">Here's the default text for the paragraph element. </p>
+
+    <button onclick="changeParagraphTextInPage()">Change text from script in page</button>
+    <button onclick="changeTextFromExternalFile()">Change text from script in external file</button>
+    <button onclick="changeTextColor('magenta')">Turn text magenta</button>
+    <button onclick="changeTextColor('teal')">Turn text teal</button>
+
+    <button onclick="resizeImage('small')">Shrink image</button>
+    <button onclick="resizeImage('large')">Enlarge image</button>
+    <button onclick="toggleImage(true)">Show image</button>
+    <button onclick="toggleImage(false)">Hide image</button>
+</body>
+</html>

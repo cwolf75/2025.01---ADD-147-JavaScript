@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body, html {
+    height: 100%;
+    background: rgb(192, 221, 217);
+
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #10253c; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+button:hover {
+    background-color: #7d1958;
+}
+
+.images figure {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+} 
+
+
+#mainImage {
+    transition: width 0.5s ease; 
+}
+
+#info {
+    font-size: 1.2rem;
+    color: #10253c;
+    margin: 20px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
